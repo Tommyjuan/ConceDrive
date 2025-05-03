@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ConceDrive</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="navbar-section logo">
+        <span>ConceDrive</span>
+      </div>
+  
+      <!-- Barra de búsqueda -->
+      <div class="navbar-section search">
+        <form class="search-form" role="search">
+          <input type="search" placeholder="Buscar vehículo..." aria-label="Buscar">
+          <button type="submit">Buscar <i class="fas fa-search"></i></button>
+        </form> 
+      </div>
+  
+      <!-- Menú de navegación -->
+      <div class="navbar-section menu">
+        <ul class="menu-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nuevos.html">Vehículos nuevos</a></li>
+          <li><a href="usados.html">Vehículos usados</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+
+  <section class="hero">
+    <h1>Bienvenido a ConceDrive</h1>
+    <p>¡Tenga las llaves de su nuevo carrito!</p>
+  </section>
+
+  <section class="catalogo">
+    <h2>Nuestros Destacados</h2>
+  
+    <!-- Mensaje de búsqueda -->
+    <p id="sin-resultados" style="display: none; text-align: center; color: #888; margin-top: 20px;">
+      No se encontraron vehículos que coincidan con tu búsqueda.
+    </p>
+  
+    <div class="vehiculos-grid">
+  
+      <!-- Tarjeta 1 -->
+      <div class="tarjeta" data-marca="hyundai electra">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/carro3a.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro3b.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro3c.jpg" alt="usado"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <h3>Hyundai Electra 2020</h3>
+        <p>Precio: COP20.000.000</p>
+        <button>Ver más</button>
+      </div>
+  
+      <!-- Tarjeta 2 -->
+      <div class="tarjeta" data-marca="toyota corolla">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/carro1a.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro1b.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro1c.jpg" alt="usado"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <h3>Toyota Corolla 1.8 Xe-1</h3>
+        <p>Precio: COP79.900.000</p>
+        <button>Ver más</button>
+      </div>
+  
+      <!-- Tarjeta 3 -->
+      <div class="tarjeta" data-marca="ford fiesta">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/carro2a.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro2b.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro2c.jpg" alt="usado"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <h3>Ford Fiesta 2019</h3>
+        <p>Precio: COP25.000.000</p>
+        <button>Ver más</button>
+      </div>
+  
+      <!-- Tarjeta 4 -->
+      <div class="tarjeta" data-marca="ford raptor">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/carro8a.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro8b.jpg" alt="usado"></div>
+            <div class="swiper-slide"><img src="img/carro8c.jpg" alt="usado"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <h3>Ford F-150 Raptor Supercab</h3>
+        <p>Precio: COP200.900.000</p>
+        <button>Ver más</button>
+      </div>
+  
+    </div>
+  <!-- Paginación funcional -->
+<div class="pagination" id="paginacion">
+  <button class="page-btn" onclick="cambiarPagina(1)">1</button>
+  <button class="page-btn" onclick="cambiarPagina(2)">2</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="js/main.js"></script> 
+</body>
+</html>

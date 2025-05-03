@@ -1,0 +1,351 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo general */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar completa */
+  header {
+    background-color: #00274d;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 1rem 2rem;
+    background-color: #00274d;
+    color: white;
+  }
+  
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  /* Barra de búsqueda */
+  .search-form {
+    display: flex;
+    align-items:baseline;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+  
+  .search-form input[type="search"] {
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    border: none;
+    outline: none; 
+    font-size: 0.9rem;
+    height: 2rem;
+  }
+  
+  .search-form button {
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    border: none;
+    outline: none; 
+    font-size: 0.9rem;
+    height: 2rem;
+    background-color: #004080;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .search-form button i {
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  .search-form button:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Menú de navegación */
+  .menu-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .menu-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-image: url('img/banner.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    padding: 20px;
+    }
+    
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+      
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Catálogo */
+  .catalogo {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .catalogo h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #00274d;
+  }
+  
+  /* Tarjetas de vehículos */
+  .vehiculos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .tarjeta {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tarjeta h3 {
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #004080;
+  }
+  
+  .tarjeta p {
+    margin: 0 1rem 1rem;
+    color: #333;
+  }
+  
+  .tarjeta button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1rem;
+    margin: 0 1rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .tarjeta button:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Swiper */
+  .swiper {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  
+  /* Formulario */
+  .form-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #00274d;
+  }
+  
+  form label {
+    display: block;
+    margin: 0.5rem 0 0.3rem;
+    font-weight: bold;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Paginación de las tarjetas */
+  .pagination {
+    text-align: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  
+  .page-btn {
+    background-color: #004080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .page-btn:hover {
+    background-color: #0066cc;
+  }
+  
+  .page-btn.active {
+    background-color: #007bff;
+  }
+  
+  
+  /* Contacto */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f6fc;
+    color: #333;
+  }
+  
+  .contacto-hero {
+    background: linear-gradient(135deg, #003566, #001d3d);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .contacto-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contacto-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .social-card {
+    background: white;
+    border-radius: 12px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .social-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .social-card i {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-card a {
+    text-decoration: none;
+    color: #003566;
+    font-weight: bold;
+  }
+  
+  /* Opcionales: colores según red */
+  .facebook i { color: #1877f2; }
+  .instagram i { color: #e1306c; }
+  .twitter i { color: #1da1f2; }
+  .whatsapp i { color: #25d366; }
+  .correo i { color: #ff6f00; }
+  
+  .contacto-hero a {
+  color: #ccc;
+  box-sizing: content-box;
+  
+  }
+
+  /* tarjeta destacada al buscar */
+  .tarjeta.destacada {
+    box-shadow: 0 0 10px #007bff;
+    border: 2px solid #007bff;
+  }
+  
